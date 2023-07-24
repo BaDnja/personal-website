@@ -1,0 +1,162 @@
+/* styles.css */
+
+:root {
+  font-size: 16px; /* 1rem */
+}
+
+body {
+  background-color: #1a2b41;
+  color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #1a2b41;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #f8f9fa;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Hover color - primary color */
+}
+
+.container {
+  background-color: #2e3d51;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f8f9fa;
+}
+
+p {
+  color: #f8f9fa;
+}
+
+.nav-link .bi {
+  font-size: 1.5rem; /* Relative to the root font size (html) */
+}
+
+/* Display social media icons next to each other in the mobile menu */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem; /* Adjust spacing between icons in rem units */
+}
+
+/* Custom colors for buttons */
+.btn-custom-primary {
+  background-color: #007bff; /* Blue color, you can change it to your preferred color */
+  border-color: #007bff;
+}
+
+.btn-custom-primary:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  border-color: #0056b3;
+}
+
+.btn-custom-secondary {
+  background-color: #ffc107; /* Yellow color, you can change it to your preferred color */
+  border-color: #ffc107;
+}
+
+.btn-custom-secondary:hover {
+  background-color: #e0a800; /* Darker yellow on hover */
+  border-color: #e0a800;
+}
+
+/* PROJECTS */
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #364258;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+.project-main-content {
+  margin-right: 1rem;
+}
+
+.project-main-content .project-sub-content {
+  flex: 1; /* Allow the content to take remaining available width */
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-right: 1.25rem; /* Add some space between title and thumbnail */
+}
+
+.project-thumbnail img {
+  max-width: 12rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #f8f9fa;
+}
+
+.project-description-additional-link {
+  text-decoration: none;
+}
+
+.project-skills {
+  margin-top: 0.9375rem;
+}
+
+.project-skills .badge {
+  display: inline-block;
+  padding: 0.375rem 0.625rem;
+  background-color: #007bff; /* Customize the badge color */
+  color: #ffffff;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  margin-right: 0.3125rem;
+  margin-bottom: 0.3125rem;
+}
+
+@media (max-width: 770px) {
+  .project-card {
+    flex-direction: column;
+  }
+  .project-sub-content {
+    margin-top: 1rem;
+  }
+}
